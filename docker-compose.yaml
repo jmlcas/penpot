@@ -4,7 +4,7 @@ services:
     image: "penpotapp/frontend:latest"
     restart: unless-stopped    
     ports:
-      - "9001:80"
+      - "9001:8080"
     volumes:
       - ./penpot_assets_data:/opt/data
     env_file:
@@ -62,4 +62,5 @@ services:
 
 networks:
   penpot: 
+
 
