@@ -1,5 +1,3 @@
-version: "3.5"
-
 services:
 
   penpot-frontend:
@@ -63,6 +61,5 @@ services:
       - penpot
 
 networks:
-  penpot:
+  penpot: 
 
-  
