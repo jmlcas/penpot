@@ -19,7 +19,7 @@ services:
     image: "penpotapp/backend:latest"
     restart: unless-stopped    
     volumes:
-      - ./penpot_assets_data:/opt/data
+      - ./penpot_assets_data:/opt/data/assets
     depends_on:
       - penpot-postgres
       - penpot-redis
@@ -41,7 +41,7 @@ services:
       - penpot
 
   penpot-postgres:
-    image: "postgres:13"
+    image: "postgres:15"
     restart: unless-stopped
     stop_signal: SIGINT
     environment:
@@ -62,5 +62,6 @@ services:
 
 networks:
   penpot: 
+
 
 
